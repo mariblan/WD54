@@ -1,0 +1,9 @@
+<h4>Objective:</h4>
+<p>Learn how to use the <code>slice</code> method in JavaScript to extract portions of an array without modifying the original array.</p>
+<h4>Instructions:</h4>
+<ol>
+<li>You will be given an array.</li>
+<li>Use the <code>slice</code> method to extract different portions of the array.</li>
+<li>Print the original array and the sliced portions to the console.</li>
+</ol>
+<p>Is the original array affected?</p>
