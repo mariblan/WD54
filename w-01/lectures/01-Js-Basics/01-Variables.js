@@ -12,11 +12,11 @@ var email = 'mira@org.com';
 
 // Logging into the console:
 
-console.log(username);
+// console.log(username);
 
-console.log('My name is Maria');
-console.log('I am Maria');
-console.log(username + ' is ' + age + ' years old.');
-console.log(`${username} is ${age} years old.`);
+// console.log('My name is Maria');
+// console.log('I am Maria');
+// console.log(username + ' is ' + age + ' years old.');
+// console.log(`${username} is ${age} years old.`);
 
-console.log(username, age, email);
+// console.log(username, age, email);
