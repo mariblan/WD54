@@ -4,10 +4,26 @@ const array = ['apple', 'banana', 'cherry', 'date'];
 // Create different strings by joining the array elements with various delimiters
 // Default delimiter (comma)
 
-// Using dash as delimiter
+// 1. You will be given an array of strings.
 
-// Using space as delimiter;
+// 2. Use the join method to create different strings by joining the array elements with various delimiters.
+// 2.1. Using dash as delimiter
+// 2.2. Using space as delimiter;
+// 2.3. Using ' and ' as delimiter
+// 2.4. Without any delimiter
 
-// Using ' and ' as delimiter
+// 3. Print the original array and the resulting strings to the console.
 
-// Without any delimiter
+
+
+
+let join_array = array.join('-')
+console.log(join_array)
+
+
+let join_array2 = array.join(',')
+console.log(join_array2)
+
+let join_array3 = array.join(' ')
+console.log(join_array3)
+
