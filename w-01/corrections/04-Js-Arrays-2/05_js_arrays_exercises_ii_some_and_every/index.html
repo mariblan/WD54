@@ -10,19 +10,120 @@
   <body>
     <header>
       <div>
-        <img src="/assets/images/logo.svg" alt="WBS Coding School" />
-      </div>
-      <div>
         <h1>Standalone JS Playground</h1>
       </div>
       <div>
-        Look for the <code>README.md</code> file in the sidebar of your text editor to get started.
+        Look for the <code>README.md</code> file in the sidebar of your text
+        editor to get started.
       </div>
     </header>
     <main>
-      <div id="output"></div>
+      <p><strong>Objective:</strong></p>
+      <p>
+        Learn how to use the&nbsp;<code>some</code> and
+        <code>every</code> methods to test whether some or all elements in an
+        array pass the provided function's test in JavaScript.
+      </p>
+      <p><strong>Instructions:</strong></p>
+      <ol>
+        <li>
+          <p><strong>Initialize an Array of Numbers:</strong></p>
+          <ul>
+            <li>
+              Create an array called <code>numbers</code> containing the
+              following values in order: <code>4</code>, <code>8</code>,
+              <code>15</code>, <code>16</code>, <code>23</code>,
+              <code>42</code>.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong
+              >Use the <code>some</code> Method to Check for Numbers Greater
+              Than 20:</strong
+            >
+          </p>
+          <ul>
+            <li>
+              Use the <code>some</code> method to check if there are any numbers
+              in <code>numbers</code> that are greater than <code>20</code>.
+            </li>
+            <li>
+              Print the result to the console (should be <code>true</code>).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong
+              >Use the <code>every</code> Method to Check for Numbers Less Than
+              50:</strong
+            >
+          </p>
+          <ul>
+            <li>
+              Use the <code>every</code> method to check if all numbers in
+              <code>numbers</code> are less than <code>50</code>.
+            </li>
+            <li>
+              Print the result to the console (should be <code>true</code>).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p><strong>Initialize an Array of Objects:</strong></p>
+          <ul>
+            <li>
+              Create an array called <code>students</code> containing the
+              following objects:
+              <ul>
+                <li><code>{ name: "Alice", age: 25, passed: true }</code></li>
+                <li><code>{ name: "Bob", age: 22, passed: false }</code></li>
+                <li><code>{ name: "Charlie", age: 27, passed: true }</code></li>
+                <li><code>{ name: "David", age: 20, passed: true }</code></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong
+              >Use the <code>some</code> Method to Check if Any Student
+              Failed:</strong
+            >
+          </p>
+          <ul>
+            <li>
+              Use the <code>some</code> method to check if there are any
+              students in <code>students</code> who have <code>passed</code> set
+              to <code>false</code>.
+            </li>
+            <li>
+              Print the result to the console (should be <code>true</code>).
+            </li>
+          </ul>
+        </li>
+        <li>
+          <p>
+            <strong
+              >Use the <code>every</code> Method to Check if All Students are
+              Older Than 18:</strong
+            >
+          </p>
+          <ul>
+            <li>
+              Use the <code>every</code> method to check if all students in
+              <code>students</code> are older than <code>18</code>.
+            </li>
+            <li>
+              Print the result to the console (should be <code>true</code>).
+            </li>
+          </ul>
+        </li>
+      </ol>
     </main>
-    <script src="assets/js/DOMConsole.js"></script>
+
     <script type="module" src="index.js"></script>
   </body>
 </html>
