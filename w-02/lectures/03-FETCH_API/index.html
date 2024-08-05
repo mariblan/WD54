@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=
+    , initial-scale=1.0"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>The Duck Pond</title>
+    </head>
+    <body class="p-4">
+        <header class="text-center">
+            <h1 class="text-6xl">The Duck Pond</h1>
+        </header>
+        <main>
+            <button id="summon" class="btn btn-primary m-auto block my-4">
+                Summon the ducks!
+            </button>
+            <section
+                id="pond"
+                class="flex flex-wrap gap-4 p-4 w-full"
+            ></section>
+            <section
+                class="flex flex-col items-center gap-4 border-2 rounded-lg p-4 mx-8"
+            >
+                <h2 class="text-4xl">Add a new duck to the pond!</h2>
+                <form id="add-form" class="flex flex-col gap-4 w-3/4">
+                    <input
+                        id="name"
+                        type="text"
+                        placeholder="What is your duck's name?"
+                        class="input input-bordered w-full"
+                        required
+                    />
+                    <input
+                        id="img-url"
+                        type="url"
+                        placeholder="What does your duck look like?"
+                        class="input input-bordered w-full"
+                        required
+                    />
+                    <input
+                        id="quote"
+                        type="text"
+                        placeholder="What does your duck say?"
+                        class="input input-bordered w-full"
+                    />
+                    <button type="submit" class="btn btn-secondary">
+                        Add duck
+                    </button>
+                </form>
+            </section>
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
