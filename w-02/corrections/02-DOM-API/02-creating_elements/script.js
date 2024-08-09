@@ -3,6 +3,31 @@
 // Create a header element with a nav inside it.
 // Inside the nav, create an a element with the class logo and the text "Coffee Shop".
 // Create a ul element with the class nav-list. Inside the ul, create four li elements with the class nav-item, each containing an a element with text "Home", "Menu", "About", and "Contact".
+const header = document.createElement('header');
+const nav = document.createElement('nav');
+const logo = document.createElement('a');
+logo.className = 'logo';
+logo.classContent = 'Coffee Shop';
+
+const navList = document.createElement('ul');
+navList.className = 'nav-list';
+
+const navItems = ['Home', 'Menu', 'About', 'Contact'];
+navItems.forEach((item) => {
+  const li = document.createElement('li');
+  // li.className = 'nav-item';
+  li.classList.add('nav-item');
+  const a = document.createElement('a');
+  a.textContent = item;
+  a.href = '#';
+  li.appendChild(a);
+  navList.appendChild(li);
+});
+
+nav.appendChild(logo);
+nav.appendChild(navList);
+header.appendChild(nav);
+document.body.appendChild(header);
 
 // 2. Create the Hero Section:
 // Create a section element with the class hero.
@@ -11,9 +36,35 @@
 // Add a p element with the text "Enjoy the best coffee in town."
 // Add an a element with the class btn and the text "Explore Our Menu".
 
+const heroSection = document.createElement('section');
+const heroContainer = document.createElement('div');
+const heroHeader = document.createElement('h1');
+
+heroHeader.textContent = 'Welcome to Our Coffee Shop';
+const paraHero = document.createElement('p');
+const btnHero = document.createElement('button');
+
+paraHero.textContent = 'Enjoy the best coffee in town.';
+btnHero.textContent = 'Explore Our Menu';
+
+heroContainer.appendChild(heroHeader);
+heroContainer.appendChild(paraHero);
+heroContainer.appendChild(btnHero);
+heroSection.appendChild(heroContainer);
+document.body.appendChild(heroSection);
+
 // 3. Create the Footer:
 // Create a footer element with the class footer.
-// Inside the footer, create a p element with the text "© 2024 Coffee Shop. All rights reserved.".
+// Inside the footer, create a p element with the text "© 2024 Coffee Shop. 
+// All rights reserved.".
+
+const footer = document.createElement('footer');
+footer.classList.add('footer');
+const footerText = document.createElement('p');
+footerText.textContent = '© 2024 Coffee Shop. All rights reserved'
+footer.appendChild(footerText);
+document.body.appendChild(footer);
+
 
 // 4. Apply CSS Styles Using JavaScript:
 // Use JavaScript to apply the following CSS styles to the elements using element.style:
