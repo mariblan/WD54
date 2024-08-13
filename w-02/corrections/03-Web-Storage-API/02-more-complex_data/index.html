@@ -11,7 +11,7 @@
   <body>
     <div class="bg-white p-8 rounded shadow-md w-96">
       <h1 class="text-2xl font-bold mb-4">Tasks</h1>
-      <form>
+      <form id="taskForm">
         <input
           id="userInput"
           type="text"
@@ -25,7 +25,7 @@
           Submit
         </button>
       </form>
-      <ul class="mt-4 bg-gray-100 h-60 overflow-y-scroll"></ul>
+      <ul class="mt-4 bg-gray-100 h-60 overflow-y-scroll" id="taskList"></ul>
       <button
         id="reload"
         class="mt-5 px-4 py-2 bg-blue-500 hover:bg-blue-400 text-white rounded"
