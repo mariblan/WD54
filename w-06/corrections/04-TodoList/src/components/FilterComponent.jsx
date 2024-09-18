@@ -2,7 +2,7 @@ import { useApp } from "../context/AppContext";
 
 const FilterComponent = () => {
   const { setFilter } = useApp();
-  
+
   const setFilterInView = (filter) => {
     setFilter(filter);
   };

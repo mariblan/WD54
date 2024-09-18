@@ -1,0 +1,19 @@
+{
+  "name": "01-readandwrite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node createFile.js",
+    "dev": "nodemon createFile.js",
+    "createFile": "node createFile.js createFileWithMessage",
+    "deleteFile": "node deleteFiles.js deleteFileByName"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "nodemon": "^3.1.5"
+  }
+}
