@@ -3,10 +3,12 @@ const app = express();
 require("dotenv").config();
 const { getPgVersion } = require("./DB/dbConnection");
 const { getUsers, getUserById, createUser } = require("./controllers/usersControllers");
+const userRoutes = require("./routes/userRoutes");
 const port = process.env.PORT || 3000;
 
 getPgVersion();
 app.use(express.json());
+app.use("/users",userRoutes);
 
 app.get("/", (req, res) => {
   res.send("Hello World");
