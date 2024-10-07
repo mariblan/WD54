@@ -10,7 +10,8 @@ require("dotenv").config();
 connectToDB();
 const port = process.env.PORT || 3000;
 
-//Middlewares
+//Middlewares   
+app.use(cors());
 app.use(sanitize({ replaceWith: "_", allowDots: true }));
 app.use(express.json());
 
