@@ -4,8 +4,7 @@ const userSchema = new mongoose.Schema(
   {
     username: {
       type: String,
-      required: [true, "name is required"],
-      unique: true,
+      required: [true, "username is required"],
       trim: true,
       match: /^[A-Za-z]+$/,
       minlength: 2,

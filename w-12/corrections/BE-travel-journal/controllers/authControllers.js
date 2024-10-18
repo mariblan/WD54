@@ -9,19 +9,21 @@ const register = async (req, res, next) => {
       return res.status(400).json({ message: "All fields are required" });
     }
     const foundUser = await User.findOne({ email });
+    
     if (foundUser) {
       return res.status(409).json({ message: "User already exists" });
     }
+
     const hashedPassword = await bcrypt.hash(password, 10);
+    
     const { _id } = await User.create({
-      name,
+      username,
       email,
       password: hashedPassword,
     });
     const token = jwt.sign({ _id }, process.env.JWT_SECRET, {
       expiresIn: "1w",
     });
-    console.log(token);
     res.status(201).json({ token, message: "User created successfully" });
   } catch (err) {
     next(err);
